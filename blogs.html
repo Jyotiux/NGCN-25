@@ -1,0 +1,242 @@
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
+
+  <title>NGCN</title>
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden"
+    style='font-family: Newsreader, "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3">
+        <div class="flex items-center gap-4 text-[#0d141c]">
+          <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <h2 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]">NGCN</h2>
+        </div>
+        <div class="flex flex-1 justify-end gap-8">
+          <div class="flex items-center gap-9">
+            <a class="text-[#101518] text-sm font-medium leading-normal" href="index.html">Home</a>
+            <a class="text-[#101518] text-sm font-medium leading-normal" href="research.html">Research</a>
+            <a class="text-[#101518] text-sm font-medium leading-normal" href="publications.html">Publications</a>
+            <a class="text-[#101518] text-sm font-medium leading-normal" href="people.html">People</a>
+            <a class="text-[#101518] text-sm font-medium leading-normal" href="gallery.html">Gallery</a>
+            <a class="text-[#101518] text-sm font-medium leading-normal" href="blogs.html">Blogs</a>
+            <a class="text-[#101518] text-sm font-medium leading-normal" href="contact.html">Contact Us</a>
+          </div>
+          <div class="h-10 max-w-[480px]"></div>
+        </div>
+      </header>
+      <div class="px-40 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <div class="flex flex-wrap justify-between gap-3 p-4">
+            <p class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight min-w-72">Blogs</p>
+          </div>
+          <div class="px-4 py-3">
+            <label class="flex flex-col min-w-40 h-12 w-full">
+              <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                <div
+                  class="text-[#49709c] flex border-none bg-[#e7edf4] items-center justify-center pl-4 rounded-l-lg border-r-0"
+                  data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                    </path>
+                  </svg>
+                </div>
+                <input placeholder="Search blogs"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-full placeholder:text-[#49709c] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value="" />
+              </div>
+            </label>
+          </div>
+          <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-3 p-4">
+            <a href="blogs/blog1.html" class="block">
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://res.cloudinary.com/dot6dzqn6/image/upload/v1749234507/b2p2_qgzc4y.jpg");'>
+                </div>
+                <div>
+                  <p class="text-[#0d141c] text-base font-medium leading-normal">Stock portfolio Optimization</p>
+                  </p>
+                  <p class="text-[#49709c] text-sm font-normal leading-normal">Enhanced Stock Portfolio Selection Using
+                    VMD-Based IMF Generation and Hypergraph-Based RL.</p>
+                </div>
+              </div>
+            </a>
+            <a href="blogs/blog2.html" class="block">
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDCXYl7BPYIQypj65144KB_XyecvQEjIh--zbMPQKDwZL80pAnbqz4eBxYUBtxjJcK0xlAY47RNNqSgcTptGbiodLuVwAE8o99fKjniW_WGhJVrld6N3n6qDCjJlHYWbaKdNb49uF1ktjXvxOyWHItgnhwb9kCdAauE-K4-A6yDaf3n2r5MOIGtUDRXwwbAk76TWuhabOwmHD-I0O2PCcRM0bWSv2FbcmDRV7c1pgX7BLEDr1mkrbLgOhKoeZz_Txr0m41A_8nCj89j");'>
+                </div>
+                <div>
+                  <p class="text-[#0d141c] text-base font-medium leading-normal">Improving Terahertz (THz) Communication
+                  </p>
+                  <p class="text-[#49709c] text-sm font-normal leading-normal">Implementation of MIMO and Beamforming
+                    Technique in 6G THz Communication.</p>
+                </div>
+              </div>
+            </a>
+            <a href="blogs/blog5.html" class="block">
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("/images/index2.png");'>
+                </div>
+                <div>
+                  <p class="text-[#0d141c] text-base font-medium leading-normal"> Leveraging XAI for E-Commerce
+                    Recommendations</p>
+                  <p class="text-[#49709c] text-sm font-normal leading-normal">Aims to integrate XAI techniques into
+                    product recommendation systems</p>
+                </div>
+              </div>
+            </a>
+            <a href="blogs/blog6.html" class="block">
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("/images/b6_2.png");'>
+                </div>
+                <div>
+                  <p class="text-[#0d141c] text-base font-medium leading-normal">D2BFT for Multi-Agent Drone
+                    Surveillance</p>
+                  <p class="text-[#49709c] text-sm font-normal leading-normal">Deploying autonomous drones capable of
+                    intelligent decision-making using DRL to enhance surveillance tasks. </p>
+                </div>
+              </div>
+            </a>
+            <a href="blogs/blog7.html" class="block">
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://www.nationaltenders.com/frontend/upload/events/1560841094_4594.jpg");'>
+                </div>
+                <div>
+                  <p class="text-[#0d141c] text-base font-medium leading-normal">Sattelite Imagery for Canal
+                    Identification</p>
+                  <p class="text-[#49709c] text-sm font-normal leading-normal">Integration of satellite imagery with
+                    advanced data analytics to help in agriculture by enhancing productivity.</p>
+                </div>
+              </div>
+            </a>
+            <a href="blogs/blog8.html" class="block">
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://ngcn-iiitdmk.netlify.app/static/b8p12.jpg");'>
+                </div>
+                <div>
+                  <p class="text-[#0d141c] text-base font-medium leading-normal">Cross Modal and Multi Model Diffusion
+                  </p>
+                  <p class="text-[#49709c] text-sm font-normal leading-normal"> Incorporates prompts and audio scene
+                    analysis to improve interactive and diverse audio-video content for real-world use.</p>
+                </div>
+              </div>
+            </a>
+            <a href="blogs/blog9.html" class="block">
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD61F8j3z3-ldAlDnkWy-hVf6-qI8wKvG6LenK0vIwmsv3-IM6QWSEREQRy37Yq19mA6yWmASwnp3-mFC9QnFxeZ1yGlIrEsr_cjsCYGUa5J1k1HX01o3vjcyDSBxwqrCIS9OUMyky2X5ljziC5rjaPAb9AL0_5E6GHUpfZNU4mjNu2MSDkemHDXbPkkiDuIyWk2Wpv_9qXOoyKVkXdYjB7uuZ5K6X_q1UkjL86puVyOudYMzbIxqqlRG_oSHMbvNjcbaF-R70sM2XZ");'>
+                </div>
+                <div>
+                  <p class="text-[#0d141c] text-base font-medium leading-normal">Adaptive Tourism Planning</p>
+                  <p class="text-[#49709c] text-sm font-normal leading-normal">Dynamically recalculates paths, blocking
+                    unavailable routes and optimizing alternatives.</p>
+                </div>
+              </div>
+            </a>
+            <a href="blogs/blog10.html" class="block">
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://ngcn-iiitdmk.netlify.app/static/b10p1.png");'>
+                </div>
+                <div>
+                  <p class="text-[#0d141c] text-base font-medium leading-normal">Harmonies of History</p>
+                  <p class="text-[#49709c] text-sm font-normal leading-normal"> Explores the historical evolution of
+                    Bollywood music, tracing its transformation over time.</p>
+                </div>
+              </div>
+            </a>
+            <a href="blogs/blog11.html" class="block">
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://ngcn-iiitdmk.netlify.app/static/b11.png");'>
+                </div>
+                <div>
+                  <p class="text-[#0d141c] text-base font-medium leading-normal">Detect Misinformation in Religious
+                    Texts</p>
+                  <p class="text-[#49709c] text-sm font-normal leading-normal">Provides reliable insights, fostering
+                    informed engagement and countering false narratives.</p>
+                </div>
+              </div>
+            </a>
+            <a href="blogs/blog3.html" class="block">
+              <div class="flex flex-col gap-3 pb-3">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMfc8D7kKQDFcXzTzBJEljy7V1f3CGJA_Wiw1chyREbExtX-0-nUwX3p8sGnYLwI0scGpXB6lVfXceYLWMqmvb9-g-z4NOl4kvv8_oWCk5NUgQwdfGzpYHdSQs_LQgXSL1VB8wTMOcobBs0aEttxs53xTMlDWRzj1564adq6r5jtte_KBDKaX7ogYwRvjnD_yEAhdoAgG1lWu3KXbxU48GypqXfJjfPNGBLFUlPuVp4EwuvkIGOpE38XpvQIbsPSHQsYie3Cak30Fa");'>
+                </div>
+                <div>
+                  <p class="text-[#0d141c] text-base font-medium leading-normal">Parallel Dense Layer Training in
+                    Dueling DQN
+                  </p>
+                  <p class="text-[#49709c] text-sm font-normal leading-normal">Detecting cyberbullying in code-mixed
+                    Hinglish content on social media.</p>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <footer class="flex justify-center">
+        <div class="flex max-w-[960px] flex-1 flex-col">
+          <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+            <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+              <a class="text-[#101518] text-sm font-medium leading-normal" href="index.html">Home</a>
+              <a class="text-[#101518] text-sm font-medium leading-normal" href="research.html">Research</a>
+              <a class="text-[#101518] text-sm font-medium leading-normal" href="publications.html">Publications</a>
+              <a class="text-[#101518] text-sm font-medium leading-normal" href="people.html">People</a>
+              <a class="text-[#101518] text-sm font-medium leading-normal" href="gallery.html">Gallery</a>
+              <a class="text-[#101518] text-sm font-medium leading-normal" href="blogs.html">Blogs</a>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4">
+              <a href="#">
+                <div class="text-[#5c748a]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z">
+                    </path>
+                  </svg>
+                </div>
+              </a>
+              <a href="#">
+                <div class="text-[#5c748a]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z">
+                    </path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <p class="text-[#5c748a] text-base font-normal leading-normal">@2024 NGCN. All rights reserved.</p>
+          </footer>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="blog-search-filter.js"></script>
+</body>
+
+</html>
