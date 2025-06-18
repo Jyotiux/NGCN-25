@@ -24,6 +24,7 @@ const studentsData = [
   { name: "Himesh Purohit", expertise: "AI and Machine Learning", avatar: "Images/p19.png" },
   { name: "Mayank Tanwar", expertise: "Artificial Intelligence", avatar: "Images/p20.png" },
   { name: "Pawan Sharma", expertise: "Machine Learning", avatar: "Images/p21.png" },
+  { name: "Pawan Sharma", expertise: "Machine Learning", avatar: "Images/rohan.jpg" },
   { name: "Charithanjali", expertise: "Machine Learning", avatar: "Images/p30.jpg" },
   { name: "Anil kumar Reddy", expertise: "Machine Learning", avatar: "Images/p31.png" },
   { name: "Sowmya", expertise: "Machine Learning", avatar: "Images/p32.png" },
