@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,10 +7,31 @@
     href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
 
   <title>NGCN</title>
-  <link rel="icon" type="image/x-icon" href="Images/NGCNLogo_.png"/>
-
+  <link rel="icon" type="image/x-icon" href="Images/NGCNLogo_.png" />
 
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <style>
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in {
+      animation: fade-in 0.3s ease-out forwards;
+    }
+
+    .transition-all {
+      transition: all 0.3s ease;
+    }
+  </style>
 </head>
 
 <body>
@@ -29,13 +51,13 @@
         </div>
         <div class="flex flex-1 justify-end gap-8">
           <div class="flex items-center gap-9">
-            <a class="text-[#101518] text-sm font-medium leading-normal" href="index.html">Home</a>
-            <a class="text-[#101518] text-sm font-medium leading-normal" href="research.html">Research</a>
-            <a class="text-[#101518] text-sm font-medium leading-normal" href="publications.html">Publications</a>
-            <a class="text-[#101518] text-sm font-medium leading-normal" href="people.html">People</a>
-            <a class="text-[#101518] text-sm font-medium leading-normal" href="gallery.html">Gallery</a>
-            <a class="text-[#101518] text-sm font-medium leading-normal" href="blogs.html">Blogs</a>
-            <a class="text-[#101518] text-sm font-medium leading-normal" href="contact.html">Contact Us</a>
+            <a class="text-[#101518] text-base font-medium leading-normal" href="index.html">Home</a>
+            <a class="text-[#101518] text-base font-medium leading-normal" href="research.html">Research</a>
+            <a class="text-[#101518] text-base font-medium leading-normal" href="publications.html">Publications</a>
+            <a class="text-[#101518] text-base font-medium leading-normal" href="people.html">People</a>
+            <a class="text-[#101518] text-base font-medium leading-normal" href="gallery.html">Gallery</a>
+            <a class="text-[#101518] text-base font-medium leading-normal" href="blogs.html">Blogs</a>
+            <a class="text-[#101518] text-base font-medium leading-normal" href="contact.html">Contact Us</a>
           </div>
           <div class="h-10 max-w-[480px]"></div>
         </div>
@@ -60,7 +82,8 @@
                   </h1>
                   <h2
                     class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                    Dr. Kaniyambakkam Elayavilli Srinivasa Desikan, currently working as an Assistant Professor at IIITDM Kurnool, leads the
+                    Dr. Kaniyambakkam Elayavilli Srinivasa Desikan, currently working as an Assistant Professor at
+                    IIITDM Kurnool, leads the
                     Next Gen Computing and
                     Networking (NGCN) Group. The team focuses on emerging research areas such as Artificial
                     Intelligence, IoT, Networks, and other advanced computing technologies.
@@ -77,14 +100,70 @@
             <div class="flex items-center justify-between px-4 pb-3 pt-5">
               <h2 class="text-[#101518] text-[22px] font-bold leading-tight tracking-[-0.015em]">Our Team</h2>
               <div class="text-[#5c748a] text-sm">
-                Showing <span id="showing-range">1-20</span> of <span id="total-students">0</span> students
+                Showing <span id="showing-range">1-5</span> of <span id="total-students">0</span> students
+              </div>
+            </div>
+            <div class="px-4 py-3">
+              <label class="flex flex-col min-w-40 h-12 w-full">
+                <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                  <div
+                    class="text-[#5c748a] flex border-none bg-[#eaedf1] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                    data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                      viewBox="0 0 256 256">
+                      <path
+                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <input placeholder="Search by name, expertise" oninput="handleSearch(this.value)"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#101518] focus:outline-0 focus:ring-0 border-none bg-[#eaedf1] focus:border-none h-full placeholder:text-[#5c748a] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" />
+                </div>
+              </label>
+            </div>
+
+            <!-- Batch Filter Tabs -->
+            <div class="px-4 py-3 mb-4">
+              <div class="flex flex-wrap gap-2">
+                <button id="batch-all"
+                  class="px-4 py-2 rounded-full text-sm font-medium bg-[#dce8f3] text-[#101518] border border-[#dce8f3] transition-all hover:shadow-md">
+                  All Batches
+                </button>
+                <button id="batch-A"
+                  class="px-4 py-2 rounded-full text-sm font-medium bg-white text-[#5c748a] border border-[#eaedf1] hover:bg-[#f1f2f3] transition-all">
+                  QIP Alumni
+                </button>
+                <button id="batch-AA"
+                  class="px-4 py-2 rounded-full text-sm font-medium bg-white text-[#5c748a] border border-[#eaedf1] hover:bg-[#f1f2f3] transition-all">
+                  Past Alumni
+                </button>
+                <button id="batch-B"
+                  class="px-4 py-2 rounded-full text-sm font-medium bg-white text-[#5c748a] border border-[#eaedf1] hover:bg-[#f1f2f3] transition-all">
+                  2025 Pilot Batch
+                </button>
+                <button id="batch-C"
+                  class="px-4 py-2 rounded-full text-sm font-medium bg-white text-[#5c748a] border border-[#eaedf1] hover:bg-[#f1f2f3] transition-all">
+                  2026 B.Tech
+                </button>
+                <button id="batch-D"
+                  class="px-4 py-2 rounded-full text-sm font-medium bg-white text-[#5c748a] border border-[#eaedf1] hover:bg-[#f1f2f3] transition-all">
+                  2027 B.Tech
+                </button>
+                <button id="batch-E"
+                  class="px-4 py-2 rounded-full text-sm font-medium bg-white text-[#5c748a] border border-[#eaedf1] hover:bg-[#f1f2f3] transition-all">
+                  Interns
+                </button>
               </div>
             </div>
 
-            <div id="students-grid" class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+            <!-- Team Members Container -->
+            <div id="team-members-container">
+              <!-- Team members will be populated here by JavaScript -->
             </div>
 
-            <div class="flex items-center justify-center p-4" id="pagination">
+            <!-- Pagination -->
+            <div class="flex items-center justify-center p-4 gap-1" id="pagination">
+              <!-- Pagination buttons will be populated here by JavaScript -->
             </div>
           </div>
 
@@ -100,26 +179,27 @@
                   <a class="text-[#101518] text-sm font-medium leading-normal" href="blogs.html">Blogs</a>
                 </div>
                 <div class="flex flex-wrap justify-center gap-4">
-                  <a href="#">
-                    <div class="text-[#5c748a]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
-                        viewBox="0 0 256 256">
-                        <path
-                          d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z">
-                        </path>
-                      </svg>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div class="text-[#5c748a]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
-                        viewBox="0 0 256 256">
-                        <path
-                          d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z">
-                        </path>
-                      </svg>
-                    </div>
-                  </a>
+                                <a href="https://x.com/NGCN_Group" target="_blank" rel="noopener noreferrer">
+                <div class="text-[#5c748a]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z">
+                    </path>
+                  </svg>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/company/next-gen-computing-and-networking-ngcn/" target="_blank"
+                rel="noopener noreferrer">
+                <div class="text-[#5c748a]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z">
+                    </path>
+                  </svg>
+                </div>
+              </a>
                 </div>
                 <p class="text-[#5c748a] text-base font-normal leading-normal">@2024 NGCN. All rights reserved.</p>
               </footer>
@@ -127,7 +207,8 @@
           </footer>
         </div>
       </div>
-      <script src="student-data.js"></script>
+      <script src="data.js"></script>
+      <script src="people-pagination.js"></script>
 </body>
 
 </html>

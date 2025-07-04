@@ -1,0 +1,466 @@
+const teamMembers = [
+  {
+    name: "Dr. Konduri Ramesh",
+    batch: "QIP Alumni",
+    expertise: "Networking",
+    description: "QIP PG certificate program at IIITDM Kurnool. Under the guidance of Dr. K. E. Srinivas, worked on project titled 'Remote monitoring and automatic protection of solar plant using IoT' was completed, and a patent was published on 25/10/2024.",
+    email: "Rameshbec.konduri@becbapatla.ac.in",
+    photo: "./Images/a2.png"
+  },
+  {
+    name: "D. Raghunatha Rao",
+    batch: "QIP Alumni",
+    expertise: "Networking",
+    description: "QIP PG student, under the guidance of Dr. K. E. Srinivas, submitted a conference paper to AREIS, conducted by Jyothi Engineering College, titled 'CAViaR Archery Optimization Algorithm-Based Cooperative Spectrum Sensing in Cognitive Radio Networks.'",
+    email: "draghunatharao7@gmail.com",
+    photo: "./Images/a1.png"
+  },
+  {
+    name: "Sai Teja",
+    batch: "Past Alumni",
+    expertise: "Edge Computing",
+    description: "Worked on enhancing the efficiency of load balancing in edge computing networks",
+    email: "vsaiteja274@gmail.com",
+    photo: "./Images/p00.png"
+  },
+  {
+    name: "Shivamani G",
+    batch: "2025 Pilot Batch",
+    expertise: "ML, Specific Area: Satellite Imagery",
+    description: "My research focuses on developing deep learning models for smart canal infrastructure. Introduced HydroNet and its enhanced version HydroNet+, which are AI-based systems designed for precise canal path detection using satellite imagery. These models contribute to the automation of waterway monitoring and planning. I presented my paper titled \"Hydro-Net: Integrating AI and Satellite Imagery for Precision Canal Building\" at CISIS 2025.",
+    email: "shivamanigangarapu@gmail.com",
+    photo: "./Images/p1.png"
+  },
+  {
+    name: "Surya Teja Gollangi",
+    batch: "2025 Pilot Batch",
+    expertise: "ML, Specific Area: Satellite Imagery",
+    description: "Worked developing AI-based path-finding models for smart canal infrastructure. Introduced HydroNet and its enhanced version HydroNet+. My work integrates classical algorithms like A*, Dijkstra, and Bidirectional Search. Our paper, \"Hydro-Net: Integrating AI and Satellite Imagery for Precision Canal Building,\" was presented at CISIS 2025, and an extended version is in progress for journal submission.",
+    email: "suryagollangi2003@gmail.com",
+    photo: "./Images/p6.jpg"
+  },
+  {
+    name: "Gopi",
+    batch: "2025 Pilot Batch",
+    expertise: "Artificial Intelligence and Machine Learning, Reinforcement Learning, IOT",
+    description: "My work involves research on Reinforcement Learning for multi-agent systems. One of my projects, 'MARLPPO,' is a coordinated multi-drone system for surveillance using reinforcement learning, which has been accepted at CISIS-2025. This project primarily focuses on addressing coordination challenges between drones using reinforcement learning. Additionally, I worked another project, 'D2BFT,' which is a Byzantine fault tolerance algorithm.",
+    email: "banavathugop5i@gmail.com",
+    photo: "./Images/p3.jpg"
+  },
+  {
+    name: "Viswesh",
+    batch: "2025 Pilot Batch",
+    expertise: "AI and ML,IOT Specific Area:Reinforcement Learning ,IOT",
+    description: "My work includes research on Reinforcement Learning for Multi agents. My project 'MARLPPO',a coordinated multi-drones system for surveilleance using RL accepted at CISIS-2025.That mainly focusing on solving the problems of coordination between drones using RL.Also, another work 'D2BFT', a byzantine fault tolerance algorithm that makes the system of drones more robust and also immune to the faulty drones or agents in environment making the system more reliable.",
+    email: "nviswesh1709@gmail.com",
+    photo: "./Images/p2.png"
+  },
+  {
+    name: "Sri Sougandhika",
+    batch: "2025 Pilot Batch",
+    expertise: "Machine Learning, Explainable AI, Recommendation Systems",
+    description: "I developed a smart, explainable AI–powered recommendation system focused on e-commerce, aiming to transform traditional black-box models into transparent, user-centric solutions. The system enhances trust and personalization through features like privacy preservation, bias handling, user profiling, and a Retrieval Augmented Generation (RAG) pipeline for improved response quality.",
+    email: "gssougandhika@gmail.com",
+    photo: "./Images/p4.jpeg"
+  },
+  {
+    name: "Hari Sai Ganesh",
+    batch: "2025 Pilot Batch",
+    expertise: "Machine Learning, Explainable AI, Recommendation Systems",
+    description: "I designed an advanced explainable AI-based recommendation system for e-commerce, replacing traditional black-box models with transparent, user-adaptive solutions. The system incorporates dynamic user profiling, bias mitigation, and privacy-preserving mechanisms to ensure fairness and trust. Central to the architecture is a Retrieval-Augmented Generation (RAG) pipeline, leveraging BERT-based embeddings and FAISS for semantic retrieval.",
+    email: "sganeshnov24@gmail.com",
+    photo: "./Images/p5.jpg"
+  },
+  {
+    name: "Shenbaga Sujan",
+    batch: "2025 Pilot Batch",
+    expertise: "Machine Learning, Deep Learning",
+    description: "I developed a deep learning pipeline for bioacoustic species classification using environmental audio recordings. The workflow involved converting raw audio into Mel spectrograms and applying transfer learning with EfficientNet to accurately classify bird and animal sounds. I optimized the model for performance on imbalanced and noisy datasets.",
+    email: "offl.sujan@gmail.com",
+    photo: "./Images/p7.jpg"
+  },
+  {
+    name: "Madhav Kartheek",
+    batch: "2025 Pilot Batch",
+    expertise: "Multimodal AI, ML Specific Area: Generative AI",
+    description: "I specialize in AI-driven multimedia synthesis, with a focus on generative and diffusion-based models. My work includes SYNCAD, a real-time synchronized audio-to-video generation system accepted at IEA/AIE 2025. I also developed SYNFAC, advancing facial audio-visual alignment for improved multimodal synthesis.",
+    email: "madhav.kartheek18@gmail.com",
+    photo: "./Images/p9.png"
+  },
+  {
+    name: "Sravan Kumar",
+    batch: "2025 Pilot Batch",
+    expertise: "Reinforcement learning, Federated learning,image processing, algorithms, specific area: fog computing",
+    description: "I have worked on the PLAN smart- a journey planner which uses adaptive dijkstra algorithm, CARL a memory efficient DQN approach and Mini q learning which is also a memory efficient q learning which is helpful in reducing the latency in decision making in the fog computing scenarios",
+    email: "sravankumarjalapati@gmail.com",
+    photo: "./Images/p10.jpg"
+  },
+  {
+    name: "Yasasvi Jayavanth",
+    batch: "2025 Pilot Batch",
+    expertise: "Quantum computing, Algorithms",
+    description: "I have worked on the PLAN smart- a journey planner which uses adaptive dijkstra algorithm, Variational quantum classifiers, improving quantum circuits, applied and performed quantum circuits on network security and diabetes datasets.",
+    email: "yasasvijay@gmail.com",
+    photo: "./Images/p11.jpg"
+  },
+  {
+    name: "Venkata Siva",
+    batch: "2025 Pilot Batch",
+    expertise: "Reinforcement Learning, Portfolio Optimization",
+    description: "I have been working on Portfolio Optimization using Reinforcement Learning leveraging techniques like Hypergraphs, Attention Mechanism and Intrinsic Mode Functions. Would like to apply these in banking domain.",
+    email: "siva.dsai.2023@gmail.com",
+    photo: "./Images/p12.jpg"
+  },
+  {
+    name: "Ayush Kant",
+    batch: "2025 Pilot Batch",
+    expertise: "Mobile Computing",
+    description: "",
+    email: "",
+    photo: "./Images/p13.jpg"
+  },
+  {
+    name: "Pathlavath Mukesh",
+    batch: "2025 Pilot Batch",
+    expertise: "Mobile Computing",
+    description: "",
+    email: "",
+    photo: "./Images/p14.jpg"
+  },
+  {
+    name: "Rahul",
+    batch: "2025 Pilot Batch",
+    expertise: "AI and Machine Learning ,NLP",
+    description: "I have worked on Cyberbullying Identification Across Diverse Indian Languages comprise of 5 +1(Hinglish Code Mixed) Indian Language introduce HighPerformanceCyber-BERT, a specialized architecture combining multi-scale convolutional extraction, selective attention gating, and hierarchical classification to detect cyberbullying across six Indian languages.",
+    email: "iamrahul823@gmail.com",
+    photo: "./Images/p15.png"
+  },
+  {
+    name: "Ankit Kumar",
+    batch: "2025 Pilot Batch",
+    expertise: "Machine Learning",
+    description: "",
+    email: "",
+    photo: "./Images/p16.png"
+  },
+  {
+    name: "Rajiv Kumar",
+    batch: "2025 Pilot Batch",
+    expertise: "ML, RL",
+    description: "Design and implementation of a Dueling Deep Q-Network for autonomous decision-making in simulated environments.",
+    email: "rajiv844121kr@gmail.com",
+    photo: "./Images/p17.png"
+  },
+  {
+    name: "Deoansh Deo",
+    batch: "2025 Pilot Batch",
+    expertise: "Deep Learning, NLP, Computational Musicology",
+    description: "As part of the team, I contributed equally to both the sound and text analysis. I helped fine-tune the Conformer model on Bollywood songs to study emotional patterns in melodies. For lyrics, I worked on data preparation and sentiment analysis using models like VADER and DistilRoBERTa.",
+    email: "deoanshdeo@gmail.com",
+    photo: "./Images/p18.png"
+  },
+  {
+    name: "Himesh Purohit",
+    batch: "2025 Pilot Batch",
+    expertise: "Deep Learning, NLP, Computational Musicology",
+    description: "I worked jointly on analyzing both the audio and lyrics of Bollywood songs. We used the Wav2Vec2-Conformer model for efficient Thaat classification due to its sub-quadratic time complexity and strong audio pattern recognition. Alongside this, I helped process and translate lyrics, applying topic modeling (LDA, BART).",
+    email: "himeshpuro@gmail.com",
+    photo: "./Images/p19.png"
+  },
+  {
+    name: "Mayank Tanwar",
+    batch: "2025 Pilot Batch",
+    expertise: "Artificial Intelligence",
+    description: "",
+    email: "",
+    photo: "./Images/p20.png"
+  },
+  {
+    name: "Pawan Sharma",
+    batch: "2025 Pilot Batch",
+    expertise: "Machine Learning",
+    description: "",
+    email: "",
+    photo: "./Images/p21.png"
+  },
+  {
+    name: "Rohan",
+    batch: "2025 Pilot Batch",
+    expertise: "ML, DL, Social Networks, NLP",
+    description: "Worked on Influence Maximization in Social Networks using Graph Algorithms, & on Multilingual Cyberbullying Detection using ML/DL Models.",
+    email: "",
+    photo: "./Images/rohan.jpg"
+  },
+  {
+    name: "Charithanjali",
+    batch: "Interns",
+    expertise: "AI,ML",
+    description: "Under the guidance of Dr. Srinivasa Desikan and mentorship of Sravan Kumar, I am working with Sravan Kumar on research focused on machine learning and computer vision. Our current work involves exploring recent research papers related to drone technology.",
+    email: "charithanjalichitrala@gmail.com",
+    photo: "./Images/p30.jpg"
+  },
+  {
+    name: "Anil kumar Reddy",
+    batch: "Interns",
+    expertise: "Reinforcement learning",
+    description: "Under the guidance of Dr.srinivasa Desikan and mentorship of Gopi and viswesh, my work focus on learnings of machine learning. Review paperTitle: Reinforcement learning for multi agent for surveillance in cinematography and entrainment. I explored about ml and reinforcement learning.",
+    email: "anilreddy.k2266@gmail.com",
+    photo: "./Images/p31.png"
+  },
+  {
+    name: "Sowmya",
+    batch: "Interns",
+    expertise: "Machine Learning, Reinforcement Learning",
+    description: "",
+    email: "chinnisowmya36@gmail.com",
+    photo: "./Images/p32.png"
+  },
+  {
+    name: "Akhila",
+    batch: "Interns",
+    expertise: "AI and Machine Learning",
+    description: "Under the guidance of Dr.Srinivasa Desikan and mentorship of Shivamani,my work focuses on learning Basics of AI and Machine learning,libraries.Review Paper Title: Advances in Fraud Detection: Machine Learning, Deep Learning, and Emerging Technologies in Financial and Online Payment Systems.",
+    email: "jyothiakhila02@gmail.com",
+    photo: "./Images/p28.png"
+  },
+  {
+    name: "Umar Fathima Kulsum",
+    batch: "Interns",
+    expertise: "IOT",
+    description: "Under the guidance of Dr. Srinivasa Desikan and mentorship of Viswesh. My work focuses on learning IoT communication protocols, conducting in-depth research, and reviewing both conference and review papers. I am gaining hands-on experience in understanding how academic research is conducted.",
+    email: "fathimakulsum0812@gmail.com",
+    photo: "./Images/p29.png"
+  },
+  {
+    name: "Lahari",
+    batch: "Interns",
+    expertise: "AI and Machine Learning",
+    description: "Under the guidance of Dr. Srinivasa Desikan and mentorship of Sravan Kumar, I am working with Sravan Kumar on research focused on machine learning and computer vision. We are exploring recent research papers related to drones, including object detection, tracking, and aerial image analysis using ML techniques.",
+    email: "laharikotrike2004@gmail.com",
+    photo: "./Images/p33.png"
+  },
+  {
+    name: "Shaik Reshma",
+    batch: "Interns",
+    expertise: "Generative AI and Machine Learning",
+    description: "",
+    email: "shaikreshma8160@gmail.com",
+    photo: "./Images/p35.png"
+  },
+  {
+    name: "Krishnamurthi",
+    batch: "2026 B.Tech",
+    expertise: "Machine Learning,Natural language Processing ,Deep learning ,Generative AI , LLM's",
+    description: "Currently working alongside Vansh Angaria on a unified framework to convert Large Language Models (LLMs) into Small Language Models (SLMs), with a focus on reducing model complexity while preserving performance. My contribution primarily involves architectural distillation, quantization techniques, and improving interpretability.",
+    email: "kiccha1703@gmail.com",
+    photo: "./Images/pk.jpg"
+  },
+  {
+    name: "Aaditya Gautam",
+    batch: "2026 B.Tech",
+    expertise: "Diffusion Models, LLMs and SLMs",
+    description: "Under the mentorship of Aditya Vardhan, we are actively working on diffusion models and Large Language Models (LLMs). Our current focus involves leveraging existing LLMs to develop specialized Small Language Models (SLMs) tailored for specific tasks.",
+    email: "aadityagautam010@gmail.com",
+    photo: "./Images/p39.jpg"
+  },
+  {
+    name: "Pratyush Parth",
+    batch: "2026 B.Tech",
+    expertise: "Diffusion Models, LLMs and SLMs",
+    description: "Under the guidance of Dr. Srinivasa Desikan and the mentorship of Aditya Vardhan, Aaditya Gautam and I are currently working as a team on research involving Diffusion Models and Large Language Models (LLMs). Our primary focus is on leveraging existing LLMs to develop task-specific Small Language Models (SLMs).",
+    email: "pratyushparth229@gmail.com",
+    photo: "./Images/p40.jpg"
+  },
+  {
+    name: "Sarvani",
+    batch: "2026 B.Tech",
+    expertise: "Gen AI ,Deepfake Detection,DL,ML",
+    description: "Currently working under the guidance of Dr. Srinivasa Desikan and mentorship of Aditya Vardan, alongside teammate Sneha, on developing a deepfake detection system using Generative AI techniques. The project focuses on designing and training deep learning models such as Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs).",
+    email: "sarvanirayala01@gmail.com",
+    photo: "./Images/p41.jpg"
+  },
+  {
+    name: "Jyoti Singh",
+    batch: "2026 B.Tech",
+    expertise: "GenAI,Multilingual TTS, Speech Synthesis",
+    description: "Under the guidance of Dr. Srinivasa Desikan and the mentorship of Aditya Vardhan, I am exploring advancements in multilingual Text-to-Speech (TTS) systems using Generative AI. My research focuses on building inclusive, natural-sounding speech synthesis models that support diverse languages and dialects.",
+    email: "purvi41493842@gmail.com",
+    photo: "./Images/p42.webp"
+  },
+  {
+    name: "MD Yusuf Murtaza",
+    batch: "2026 B.Tech",
+    expertise: "AI, CV, ML, IOT, XAI, NLP",
+    description: "Working under the guidance of Dr. Srinivas Desikan and the mentorship of S.H.S. Ganesh, I am exploring ways to expand the scope of Explainable AI (XAI) in the agricultural domain. The focus is on advancing agricultural practices by integrating advanced technologies to enhance crop yield, ensure sustainability, and drive data-driven decision-making.",
+    email: "yusufmurtaza32@gmail.com",
+    photo: "./Images/p43.jpg"
+  },
+  {
+    name: "Satyam Saurabh",
+    batch: "2026 B.Tech",
+    expertise: "ML DL NLP AI XAI",
+    description: "Under the guidance of Dr. Srinivas Desikan and mentorship of S.H.S. Ganesh, I am actively engaged in exploring innovative applications of Explainable AI (XAI) within the agricultural sector. My work aims to support sustainable farming, optimize crop productivity, and promote data-driven decision-making.",
+    email: "shashankkumar04066@gmail.com",
+    photo: ""
+  },
+  {
+    name: "Satvika Dwaram",
+    batch: "2026 B.Tech",
+    expertise: "GenAI,Multilingual TTS, Speech Synthesis",
+    description: "Under the guidance of Dr. Srinivasa Desikan and the mentorship of Aditya Vardhan, I am exploring advancements in multilingual Text-to-Speech (TTS) systems using Generative AI. My research focuses on building inclusive, natural-sounding speech synthesis models that support diverse languages and dialects.",
+    email: "satvikadwaram@gmail.com",
+    photo: "./Images/p44.jpg"
+  },
+  {
+    name: "Sneha",
+    batch: "2026 B.Tech",
+    expertise: "Gen AI ,Deepfake Detection,DL,ML,Vision Transformers",
+    description: "Currently working under the guidance of Dr. Srinivasa Desikan and mentorship of Aditya Vardan on developing a deepfake detection system using Generative AI techniques. My work involves designing and training deep learning models such as Convolutional Neural Networks (CNNs) and Vision Transformers to identify visual and temporal inconsistencies in AI-generated media.",
+    email: "snehakampli675@gmail.com",
+    photo: "./Images/p45.webp"
+  },
+  {
+    name: "Veeramalla Akhila",
+    batch: "2026 B.Tech",
+    expertise: "IoT,Edge AI,RNN (Recurrent Neural Networks),Explainable AI (XAI),Healthcare Analytics",
+    description: "Collaborating with G. Preethi on a research initiative titled 'IoT's Role in Personalized Dietary Support for Mental Health using RNN Models.' The project explores the integration of IoT-enabled dietary tracking with deep learning models to deliver personalized and predictive insights into mental well-being.",
+    email: "veeramallaakhila19@gmail.com",
+    photo: "./Images/p46.jpg"
+  },
+  {
+    name: "Gundra Preethi",
+    batch: "2026 B.Tech",
+    expertise: "IoT,Edge AI,RNN (Recurrent Neural Networks),Explainable AI (XAI),Healthcare Analytics",
+    description: "Currently working with V. Akhila on a research project titled 'IoT's Role in Personalized Dietary Support for Mental Health using RNN Models.' This work focuses on developing a smart healthcare framework that combines IoT-based dietary monitoring with Recurrent Neural Networks (RNNs) to analyze eating patterns and predict mental health indicators.",
+    email: "preethisravya4@gmail.com",
+    photo: "./Images/p47.jpg"
+  },
+  {
+    name: "Shashwat Pandey",
+    batch: "2026 B.Tech",
+    expertise: "Reinforcement Learning, Federated Learning, Edge AI, TinyML",
+    description: "I'm working on Reinforcement Learning and Federated Learning, focusing on training efficient models across distributed devices without sharing raw data. My work includes optimizing models for low-power edge devices, reducing latency, and improving learning on non-uniform data.",
+    email: "shashwatp108@gmail.com",
+    photo: "./Images/p48.webp"
+  },
+  {
+    name: "Vishwajeet Singh",
+    batch: "2026 B.Tech",
+    expertise: "Reinforcement Learning, Federated Learning, Tiny ML",
+    description: "I am working on reinforcement learning, federated learning, and TinyML. My current focus is accelerating RL by harnessing pretrained LLMs to provide action priors that shape agent policies, reducing sample complexity and training time.",
+    email: "vishwajeetsingh1567@gmail.com",
+    photo: "./Images/p49.webp"
+  },
+  {
+    name: "Kaki Blessy",
+    batch: "2026 B.Tech",
+    expertise: "ML,DL,AI",
+    description: "Under the guidence of Dr.Srinivasa Desikan and the mentorship of Sougandika. I am working on research on Emotional Speech Recognition and Conversion using Machine Learning, Deep Learning, and AI techniques. My work involves extracting emotional features from speech signals and converting voice tones using advanced models such as LSTMs and GANs.",
+    email: "blessykaki@gmail.com",
+    photo: "./Images/p50.webp"
+  },
+  {
+    name: "Sirimalla Prathyusha",
+    batch: "2026 Batch-IIITDMK",
+    expertise: "AI,ML,DL",
+    description: "Under the guidance of Dr. Srinivasa Desikan and the mentorship of Sougandhika, I am working on a research paper focused on Emotional Voice Recognition and Conversion using Machine Learning (ML), Deep Learning (DL), and AI techniques. This research aims to extract emotional cues from speech and accurately convert them across different speakers.",
+    email: "prathyushasirimalla2004@gmail.com",
+    photo: "./Images/p51.jpg"
+  },
+  {
+    name: "Chilukala Amrutha",
+    batch: "2026 B.Tech",
+    expertise: "Representation Learning, User Behavior Modeling, and Context-Aware Recommendations in Location-based Systems",
+    description: "Devolping context-aware reccomendation models for location-based services by leveraging Representaion Learning, Contrastive objectives and temporal user modelign. My work focuses on personalizing suggestions based on user behaviour, time and geographic context to improve relevance in dynamic Urban Settings.",
+    email: "c.amrutha7805@gmail.com",
+    photo: "./Images/p52.jpg"
+  },
+  {
+    name: "Srikakolapu Suguna Sri",
+    batch: "2026 B.Tech",
+    expertise: "Personalized Recommendation Systems, Representation Learning and Contrastive Learning for Location-based Services",
+    description: "Currently working on the intersection of Representation Learning and Personalised Local Recommendation Systems, with a focus on map-based services like Google Maps. Enhancing Local Place Recommendations and Multi Model Context Fusion.",
+    email: "seshasugunasri@gmail.com",
+    photo: "./Images/p53.webp"
+  },
+  {
+    name: "Vansh Angaria",
+    batch: "2026 B.Tech",
+    expertise: "Machine Learning,Natural language Processing ,Deep learning ,Generative AI, LLM's",
+    description: "Collaborating with Krishnamurthi on a unified framework to compress Large Language Models (LLMs) into efficient Small Language Models (SLMs), aiming to maintain performance while minimizing resource consumption. I am focusing on training pipeline optimization, evaluation metrics, and testing generalization.",
+    email: "vanshangaria20@gmail.com",
+    photo: "./Images/p54.webp"
+  },
+  {
+    name: "Neil Chetty",
+    batch: "2027 B.Tech",
+    expertise: "IoT, Game Theory, Matching Theory",
+    description: "Currently working on applying Game Theory concepts to the FOG Computing and making them more rational.Exploring ways to design a Decentralized fog computing system by using both Game Theory and Matching Theory.",
+    email: "123ad0003@iiitk.ac.in",
+    photo: "./Images/p55.jpg"
+  },
+  {
+    name: "Naren Chintakindi",
+    batch: "2027 B.Tech",
+    expertise: "IoT, Game Theory, Matching Theory",
+    description: "currently working on applying Game Theory concepts to the Fog computing and making them more rational. Exploring ways to design a Decentralized fog computing system by using both Game Theory and Matching Theory.",
+    email: "chknaren6@gmail.com",
+    photo: "./Images/p56.jpg"
+  },
+  {
+    name: "Suraj",
+    batch: "2027 B.Tech",
+    expertise: "Gen AI, ML, LLM's,Model Fine-tuning",
+    description: "Focused on building and optimizing Generative AI and Machine Learning models, with hands-on experience in training and fine-tuning transformer-based architectures. Actively contributing to the development of real-world AI solutions through model deployment, prompt engineering, and experimentation with innovative AI applications.",
+    email: "kodaksur23@gmail.com ",
+    photo: "./Images/p24.png"
+  },
+  {
+    name: "Madhumitha",
+    batch: "2027 B.Tech",
+    expertise: "AI,ML,DL",
+    description: "My work focuses on Artificial Intelligence, with a strong emphasis on Machine Learning and Deep Learning. I explore the design of intelligent, data-driven systems that learn from patterns and make human-like decisions. Using deep neural networks, I aim to develop inclusive, real-time solutions for tasks like speech synthesis and language understanding, with attention to scalability, emotion, and multilingual support.",
+    email: "",
+    photo: "./Images/p25.png"
+  },
+  {
+    name: "Sriman Srinivasan",
+    batch: "2027 B.Tech",
+    expertise: "LLMs , Gen AI , Machine Learning ",
+    description: "Working on Text generation in Gen AI and learning about NLP.Using NLP to extract the text and generate the required details for the user ",
+    email: "123ad0011@iiitk.ac.in",
+    photo: "./Images/p26.png"
+  },
+  {
+    name: "Abhinav Sharma",
+    batch: "2027 B.Tech",
+    expertise: "LLM's,GenAI ,ML",
+    description: "Exploring Natural Language Processing techniques to extract key information from raw text and generate relevant, user-specific outputs. Focus areas include entity extraction, summarization, and conversational response generation using transformer-based models and LLMs.",
+    email: "123ad0017@iiitk.ac.in",
+    photo: "./Images/p27.png"
+  },
+  {
+    name: "Dinesh Sharma",
+    batch: "2027 B.Tech",
+    expertise: "LLM's,GenAI ,ML",
+    description: "Focused on the intersection of multimodal transformers, agentic retrieval-augmented generation (RAG), and autonomous AI systems. My current work explores the integration of vector databases with agentic architectures to enable context-aware, self-directed information retrieval and reasoning.",
+    email: "123ad0013@iiitk.ac.in",
+    photo: "./Images/p36.png"
+  },
+  {
+    name: "Shivam Vats",
+    batch: "2027 B.Tech",
+    expertise: "LLMs, GenAI, Transformers",
+    description: "Currently learning about Large Language Models (LLMs), Generative AI, and transformers, focusing on how these technologies work together to build intelligent, goal-driven systems. Exploring how LLMs and GenAI can be used to create complete, real-life planning solutions that simplify decision-making and enable real-world automation.",
+    email: "123ad0028@iiitk.ac.in",
+    photo: "./Images/p37.png"
+  },
+  {
+    name: "Prateek Raushan",
+    batch: "2027 B.Tech",
+    expertise: "Networks and Machine learning",
+    description: "",
+    email: "",
+    photo: "./Images/p38.jpg"
+  }
+];
