@@ -1,28 +1,5 @@
 const teamMembers = [
-  {
-    name: "Dr. Konduri Ramesh",
-    batch: "QIP Alumni",
-    expertise: "Networking",
-    description: "QIP PG certificate program at IIITDM Kurnool. Under the guidance of Dr. K. E. Srinivas, worked on project titled 'Remote monitoring and automatic protection of solar plant using IoT' was completed, and a patent was published on 25/10/2024.",
-    email: "Rameshbec.konduri@becbapatla.ac.in",
-    photo: "./Images/a2.png"
-  },
-  {
-    name: "D. Raghunatha Rao",
-    batch: "QIP Alumni",
-    expertise: "Networking",
-    description: "QIP PG student, under the guidance of Dr. K. E. Srinivas, submitted a conference paper to AREIS, conducted by Jyothi Engineering College, titled 'CAViaR Archery Optimization Algorithm-Based Cooperative Spectrum Sensing in Cognitive Radio Networks.'",
-    email: "draghunatharao7@gmail.com",
-    photo: "./Images/a1.png"
-  },
-  {
-    name: "Sai Teja",
-    batch: "Past Alumni",
-    expertise: "Edge Computing",
-    description: "Worked on enhancing the efficiency of load balancing in edge computing networks",
-    email: "vsaiteja274@gmail.com",
-    photo: "./Images/p00.png"
-  },
+
   {
     name: "Shivamani G",
     batch: "2025 Pilot Batch",
@@ -32,20 +9,12 @@ const teamMembers = [
     photo: "./Images/p1.png"
   },
   {
-    name: "Surya Teja Gollangi",
+    name: "Aditya Vardhan",
     batch: "2025 Pilot Batch",
-    expertise: "ML, Specific Area: Satellite Imagery",
-    description: "Worked developing AI-based path-finding models for smart canal infrastructure. Introduced HydroNet and its enhanced version HydroNet+. My work integrates classical algorithms like A*, Dijkstra, and Bidirectional Search. Our paper, \"Hydro-Net: Integrating AI and Satellite Imagery for Precision Canal Building,\" was presented at CISIS 2025, and an extended version is in progress for journal submission.",
-    email: "suryagollangi2003@gmail.com",
-    photo: "./Images/p6.jpg"
-  },
-  {
-    name: "Gopi",
-    batch: "2025 Pilot Batch",
-    expertise: "Artificial Intelligence and Machine Learning, Reinforcement Learning, IOT",
-    description: "My work involves research on Reinforcement Learning for multi-agent systems. One of my projects, 'MARLPPO,' is a coordinated multi-drone system for surveillance using reinforcement learning, which has been accepted at CISIS-2025. This project primarily focuses on addressing coordination challenges between drones using reinforcement learning. Additionally, I worked another project, 'D2BFT,' which is a Byzantine fault tolerance algorithm.",
-    email: "banavathugop5i@gmail.com",
-    photo: "./Images/p3.jpg"
+    expertise: "Multimodal AI, ML Specific Area: Generative AI",
+    description: "I have worked on AI-driven multimedia synthesis and Diffusion Models. My key projects include SYNCAD , a synchronized audio-to-video generation framework accepted at IEA/AIE 2025 , and SYNFAC , focusing on facial audio-visual coordination for better multimodal alignment. I’ve also explored bio-inspired denoising using diffusion models (accepted at CISIS 2025 ).My research aims to enhance the efficiency and quality of AI-generated content across various domains.",
+    email: "madivadaaditya@gmail.com",
+    photo: "./Images/p8.jpg"
   },
   {
     name: "Viswesh",
@@ -54,6 +23,33 @@ const teamMembers = [
     description: "My work includes research on Reinforcement Learning for Multi agents. My project 'MARLPPO',a coordinated multi-drones system for surveilleance using RL accepted at CISIS-2025.That mainly focusing on solving the problems of coordination between drones using RL.Also, another work 'D2BFT', a byzantine fault tolerance algorithm that makes the system of drones more robust and also immune to the faulty drones or agents in environment making the system more reliable.",
     email: "nviswesh1709@gmail.com",
     photo: "./Images/p2.png"
+  },
+
+  {
+    name: "Sravan Kumar",
+    batch: "2025 Pilot Batch",
+    expertise: "Reinforcement learning, Federated learning,image processing, algorithms, specific area: fog computing",
+    description: "I have worked on the PLAN smart- a journey planner which uses adaptive dijkstra algorithm, CARL a memory efficient DQN approach and Mini q learning which is also a memory efficient q learning which is helpful in reducing the latency in decision making in the fog computing scenarios",
+    email: "sravankumarjalapati@gmail.com",
+    photo: "./Images/p10.jpg"
+  },
+  {
+    name: "Surya Teja Gollangi",
+    batch: "2025 Pilot Batch",
+    expertise: "ML, Specific Area: Satellite Imagery",
+    description: "Worked developing AI-based path-finding models for smart canal infrastructure. Introduced HydroNet and its enhanced version HydroNet+. My work integrates classical algorithms like A*, Dijkstra, and Bidirectional Search. Our paper, \"Hydro-Net: Integrating AI and Satellite Imagery for Precision Canal Building,\" was presented at CISIS 2025, and an extended version is in progress for journal submission.",
+    email: "suryagollangi2003@gmail.com",
+    photo: "./Images/p6.jpg"
+  },
+
+
+  {
+    name: "Gopi",
+    batch: "2025 Pilot Batch",
+    expertise: "Artificial Intelligence and Machine Learning, Reinforcement Learning, IOT",
+    description: "My work involves research on Reinforcement Learning for multi-agent systems. One of my projects, 'MARLPPO,' is a coordinated multi-drone system for surveillance using reinforcement learning, which has been accepted at CISIS-2025. This project primarily focuses on addressing coordination challenges between drones using reinforcement learning. Additionally, I worked another project, 'D2BFT,' which is a Byzantine fault tolerance algorithm.",
+    email: "banavathugop5i@gmail.com",
+    photo: "./Images/p3.jpg"
   },
   {
     name: "Sri Sougandhika",
@@ -87,14 +83,7 @@ const teamMembers = [
     email: "madhav.kartheek18@gmail.com",
     photo: "./Images/p9.png"
   },
-  {
-    name: "Sravan Kumar",
-    batch: "2025 Pilot Batch",
-    expertise: "Reinforcement learning, Federated learning,image processing, algorithms, specific area: fog computing",
-    description: "I have worked on the PLAN smart- a journey planner which uses adaptive dijkstra algorithm, CARL a memory efficient DQN approach and Mini q learning which is also a memory efficient q learning which is helpful in reducing the latency in decision making in the fog computing scenarios",
-    email: "sravankumarjalapati@gmail.com",
-    photo: "./Images/p10.jpg"
-  },
+
   {
     name: "Yasasvi Jayavanth",
     batch: "2025 Pilot Batch",
@@ -110,6 +99,30 @@ const teamMembers = [
     description: "I have been working on Portfolio Optimization using Reinforcement Learning leveraging techniques like Hypergraphs, Attention Mechanism and Intrinsic Mode Functions. Would like to apply these in banking domain.",
     email: "siva.dsai.2023@gmail.com",
     photo: "./Images/p12.jpg"
+  },
+  {
+    name: "Dr. Konduri Ramesh",
+    batch: "QIP Alumni",
+    expertise: "Networking",
+    description: "QIP PG certificate program at IIITDM Kurnool. Under the guidance of Dr. K. E. Srinivas, worked on project titled 'Remote monitoring and automatic protection of solar plant using IoT' was completed, and a patent was published on 25/10/2024.",
+    email: "Rameshbec.konduri@becbapatla.ac.in",
+    photo: "./Images/a2.png"
+  },
+  {
+    name: "D. Raghunatha Rao",
+    batch: "QIP Alumni",
+    expertise: "Networking",
+    description: "QIP PG student, under the guidance of Dr. K. E. Srinivas, submitted a conference paper to AREIS, conducted by Jyothi Engineering College, titled 'CAViaR Archery Optimization Algorithm-Based Cooperative Spectrum Sensing in Cognitive Radio Networks.'",
+    email: "draghunatharao7@gmail.com",
+    photo: "./Images/a1.png"
+  },
+  {
+    name: "Sai Teja",
+    batch: "Past Alumni",
+    expertise: "Edge Computing",
+    description: "Worked on enhancing the efficiency of load balancing in edge computing networks",
+    email: "vsaiteja274@gmail.com",
+    photo: "./Images/p00.png"
   },
   {
     name: "Ayush Kant",
